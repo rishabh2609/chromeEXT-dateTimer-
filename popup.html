@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      @font-face {
+        font-family: hLight;
+        src: url(HelveticaNeue.ttf);
+      }
+      body {
+        font-family: hLight;
+        font-size: 100%;
+        width: auto;
+      }
+      h1 {
+        padding: 0px 50px;
+        text-align: center;
+        font-weight: bolder;
+      }
+      p {
+        color: #d81b60;
+        text-align: center;
+        padding: 0px 50px;
+        margin-top: -10px;
+      }
+      .hidden {
+        display: none;
+      }
+      #date_enter {
+        text-align: center;
+      }
+      input {
+        display: inline;
+        background: transparent;
+        border: 0px solid;
+        border-bottom-width: 1px;
+        padding: 2px 2px;
+        text-align: center;
+        width: 20vw;
+      }
+      button {
+        display: block;
+        background: transparent;
+        cursor: pointer;
+        border: 0px solid;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        color: #d81b60;
+        text-transform: uppercase;
+      }
+      *:focus {
+        outline: none;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <div id="date_enter">
+      <h1 style="width: 75vw;">Enter target date</h1>
+      <input type="text" name="set_day" placeholder="dd" id="set_day">
+      <input type="text" name="set_month" placeholder="mm" id="set_month">
+      <input type="text" name="set_year" placeholder="yyyy" id="set_year">
+      <button type="button" id="btn-set">Set date</button>
+    </div>
+    <div id="date_disp" class="hidden">
+      <h1 id="year">
+        12
+      </h1>
+      <p>
+        Years
+      </p>
+
+      <h1 id="month">
+        5
+      </h1>
+      <p>
+        Months
+      </p>
+
+      <h1 id="day">
+        9
+      </h1>
+      <p>
+        Days
+      </p>
+
+      <button type="button" id="btn-clear">Clear timer</button>
+    </div>
+  </body>
+  <script src="popup.js"></script>
+</html>
+
